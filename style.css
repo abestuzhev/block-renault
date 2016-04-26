@@ -4,6 +4,15 @@
   /*outline: 1px solid black;*/
 }
 
+/*slick*/
+.home-slider-item {
+  height: 300px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover; }
+
+
 .row-1,
 .row-3 {
   background-color: #e6e6e6;
@@ -19,9 +28,17 @@
 .row-2 {
   padding: 30px;
   padding-right: 0;
+
   /*background: url("renault_stationery_detail-1.jpg") no-repeat 50% 100%;*/
   /*background-size: cover;*/
   background: url("A4-paper-Overhead-view-mockup-vol-1.png") no-repeat 100% -4%;
+}
+.row-2__wrap {
+  text-decoration: none;
+  color: #000;
+}
+.row-2__wrap:hover {
+  text-decoration:underline;
 }
 .row-3 {
   padding-top: 1px;

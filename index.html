@@ -3,10 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>block</title>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
     <div class="h-wrap">
+      <div class="home-slider">
+        <div class="home-slider-item" style="background-image: url(3bcfb9c8a409d588a17668b49557e13d.jpg);"></div>
+        <div class="home-slider-item" style="background-image: url(3194577070437ecde16f50ed755e4d4b.jpg);"></div>
+      </div>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.home-slider').slick();
+        });
+      </script>
       <div class="row-1">
         <div class="row-1__left">
           <div class="service-clogan">Сервисное обслуживание</div>
@@ -22,8 +34,10 @@
         </div>
       </div>
       <div class="row-2">
-        <div class="row-2__title">Работа в Renault</div>
-        <div class="row-2__sub-title">Динамика Архангельск РР</div>
+        <a href="#" class="row-2__wrap">
+          <div class="row-2__title">Работа в Renault</div>
+          <div class="row-2__sub-title">Динамика Архангельск РР</div>
+        </a>
       </div>
       <div class="row-3">
           <h2 class="row-3-title">Свяжитесь с нами</h2>
@@ -50,12 +64,13 @@
               <div class="contact-block__row">Руководитель автосалона: Неволин Дмитрий</div>
               <div class="contact-block__row">Режим работы: <span>с 9:00 до 21:00 без выходных</span></div>
             </div>
-
           </div>
       </div>
     </div>
-    <script type="text/javascript" src="http://localhost:35729/livereload.js">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
-    </script>
+    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
   </body>
 </html>
