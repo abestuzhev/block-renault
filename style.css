@@ -1,13 +1,13 @@
 .h-wrap {
   width: 750px;
   margin: 20px auto;
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
 }
 
 .row-1,
 .row-3 {
-  background-color: #eee;
-  outline: 1px solid black;
+  background-color: #e6e6e6;
+  /*outline: 1px solid black;*/
 }
 .row-1::after,
 .row-3::after {
@@ -25,7 +25,9 @@
 }
 .row-3 {
   padding-top: 1px;
+  padding-left: 15px;
   font-family: sans-serif;
+  box-shadow: rgba(0,0,0,.2) 0 5px 10px;
 }
 .row-2__title {
   font: bold 24px/20px sans-serif;
@@ -85,7 +87,7 @@
 
 .row-1__left {
   width: 56%;
-  height: 205px;
+  height: 204px;
 }
 .row-1__right {
   width: 44%;
@@ -175,10 +177,24 @@
   width: 32%;
   padding: 0 5px;
   display: inline-block;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+.contact-block__title {
+  font: 16px/20px sans-serif;
+  margin: 0 0 10px;
+}
+.contact-block__row {
+  font: 14px/16px sans-serif;
 }
 
-
 /*media*/
+
+@media screen and (min-width: 750px){
+  .contact-block__row span {
+    display: block;
+  }
+}
 
 @media screen and (max-width: 750px){
   .h-wrap {
