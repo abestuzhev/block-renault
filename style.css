@@ -1,0 +1,102 @@
+.h-wrap {
+  width: 750px;
+  margin: 20px auto;
+  outline: 1px solid black;
+}
+
+.row-1,
+.row-2 {
+  background-color: #eee;
+  outline: 1px solid black;
+}
+.row-1::after,
+.row-2::after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.row-1 {
+  margin-bottom: 20px;
+}
+
+.row-1__left,
+.row-2__left,
+.row-1__right,
+.row-2__right {
+    height: 200px;
+}
+
+.row-2__left,
+.row-2__right {
+  padding: 1%;
+}
+
+.row-1__left,
+.row-2__left {
+  float: left;
+  background-color: #3498db;
+}
+
+.row-1__right,
+.row-2__right {
+  float: right;
+  background-color: #e74c3c;
+}
+.row-1__left,
+.row-2__right {
+  width: 58%;
+}
+.row-2__left,
+.row-1__right {
+  width: 38%;
+}
+
+/*row-1*/
+
+.row-1__left {
+  position: relative;
+  background: url("9c4b2975d408b0afc9f63fd99419821d.jpg") no-repeat 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.service-clogan {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font: bold 1.6em sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 3px black;
+}
+
+.nav-topbar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*row-2*/
+
+/*media*/
+
+@media screen and (max-width: 750px){
+  .h-wrap {
+    width: 95%}
+}
+
+@media screen and (max-width: 480px) {
+  .row-1__left,
+  .row-2__left,
+  .row-1__right,
+  .row-2__right {
+    float:none;
+    width:100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .row-1 {
+    margin-bottom: 0;
+  }
+}
